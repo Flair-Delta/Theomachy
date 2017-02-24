@@ -3,6 +3,8 @@ package septagram.Theomachy.Ability.HUMAN;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 import septagram.Theomachy.Ability.Ability;
 import septagram.Theomachy.Utility.CoolTimeChecker;
@@ -47,6 +49,7 @@ public class AGirl extends Ability{
 			for(Player e:GetPlayerList.getNearByNotTeamMembers(player, 5, 0, 5)) {
 				e.teleport(player);
 				e.setFoodLevel(0);
+				e.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 2, 200));
 				e.sendMessage(ChatColor.GREEN+"안락소녀"+ChatColor.WHITE+"에게 이끌려 갑니다!");
 			}
 		}

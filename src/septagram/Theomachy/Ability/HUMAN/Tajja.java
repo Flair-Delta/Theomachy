@@ -74,7 +74,7 @@ public class Tajja extends Ability{
 							break;
 						}
 					}catch(NullPointerException e) {}
-				}player.sendMessage("검이 소비되었습니다!");
+				}player.sendMessage("손은 눈보다 빠르다.");
 				Skill.Use(player, 4, stack0, 0, coolTime0);
 				time=10;
 			}
@@ -89,7 +89,7 @@ public class Tajja extends Ability{
 					switch(time) {
 					case 1:
 						event.setDamage(sword);
-						p.sendMessage("검이 파괴되었습니다!");
+						p.sendMessage("동작그만, 밑장 빼기냐.");
 						sword=0;
 						time=-1;
 						break;

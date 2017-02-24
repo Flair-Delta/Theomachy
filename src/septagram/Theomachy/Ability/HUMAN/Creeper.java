@@ -36,7 +36,7 @@ public class Creeper extends Ability
 		this.cool1=coolTime0;
 		this.sta1=stack0;
 		
-		this.rank=1;
+		this.rank=3;
 	}
 	
 	public void T_Active(PlayerInteractEvent event)

@@ -11,7 +11,7 @@ public class Boxer extends Ability
 	
 	public Boxer(String playerName)
 	{
-		super(playerName,"복서", 5, false, true, true, des);
+		super(playerName,"복서", 5, false, true, false, des);
 		Theomachy.log.info(playerName+abilityName);
 		
 		this.rank=-1;

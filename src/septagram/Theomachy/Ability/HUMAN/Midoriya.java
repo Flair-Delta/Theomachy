@@ -16,8 +16,8 @@ import septagram.Theomachy.Utility.Skill;
 public class Midoriya extends Ability{
 
 	public final static String[] des= {"블레이즈 로드 좌클릭 후 상대를 ",
-			"가격하면 올 포 원을 쓸 수 있습니다.",
-			"올 포 원을 쓰고 난 뒤에는 각종 디버프에 시달립니다."};
+			"가격하면 원 포 올을 쓸 수 있습니다.",
+			"원 포 올을 쓰고 난 뒤에는 각종 디버프에 시달립니다."};
 	
 	private int coolTime0=350;
 	private int stack0=64;
@@ -49,7 +49,7 @@ public class Midoriya extends Ability{
 	private void leftAction(Player player) {
 		if(CoolTimeChecker.Check(player, 0)&&PlayerInventory.ItemCheck(player, 4, stack0)&&!Ready){
 			Ready=true;
-			player.sendMessage(ChatColor.YELLOW+"올"+ChatColor.GREEN+" 포 "+ChatColor.AQUA+"원"+ChatColor.WHITE+"이 준비되었습니다아!!!!!!!!!");
+			player.sendMessage(ChatColor.YELLOW+"원"+ChatColor.GREEN+" 포 "+ChatColor.AQUA+"올"+ChatColor.WHITE+"이 준비되었습니다아!!!!!!!!!");
 		}
 	}
 	
@@ -60,7 +60,7 @@ public class Midoriya extends Ability{
 		if(player.getItemInHand().getTypeId()==0 && player.getName().equals(this.playerName)){			
 			if(CoolTimeChecker.Check(player, 0)&&PlayerInventory.ItemCheck(player, 4, stack0)) {
 				if(Ready) {					
-					player.sendMessage(ChatColor.YELLOW+"올"+ChatColor.GREEN+" 포 "+ChatColor.AQUA+"원"+ChatColor.WHITE+"이 가동되었습니다아!!!!!!!!!");
+					player.sendMessage(ChatColor.YELLOW+"원"+ChatColor.GREEN+" 포 "+ChatColor.AQUA+"올"+ChatColor.WHITE+"이 가동되었습니다아!!!!!!!!!");
 					d.damage(200);
 					player.getWorld().strikeLightningEffect(d.getLocation());
 					
@@ -74,7 +74,7 @@ public class Midoriya extends Ability{
 					
 					Ready=false;
 				}else {
-					player.sendMessage("아직 올 포 원의 준비가 되어있지 않군요.");
+					player.sendMessage("아직 원 포 올의 준비가 되어있지 않군요.");
 				}
 			}
 		}

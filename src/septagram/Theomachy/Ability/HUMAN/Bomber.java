@@ -20,9 +20,8 @@ public class Bomber extends Ability
 	private final int stack0=2;
 	private Location tntLocation;
 	private final static String[] des= {"폭발을 다루는 능력입니다.",
-			   "지정된 위치에 2.0의 폭발을 일으킵니다." ,
-			   "우클릭으로 해당 위치에 보이지 않는 TNT를 설치하며" ,
-			   "좌클릭으로 어디서든 폭발시킬 수 있습니다."};
+			   "좌클릭으로 해당 위치에 보이지 않는 TNT를 설치하며" ,
+			   "우클릭으로 어디서든 폭발시킬 수 있습니다."};
 	
 	public Bomber(String playerName)
 	{

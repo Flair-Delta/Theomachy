@@ -124,9 +124,21 @@ public class Help {
 					
 					i.setItem(13, abcool1);
 				}
+			}if (!ability.activeType && ability.passiveType) {
+				abcool1=new ItemStack(Material.WATCH);
+				
+				List<String> clore=new ArrayList<String>();
+				c.setDisplayName(ChatColor.GREEN+"~ 패시브 능력 ~");
+				clore.add(ChatColor.WHITE+"능력 설명을 확인하세요.");
+				c.setLore(clore);
+				
+				abcool1.setItemMeta(c);
+				
+				i.setItem(13, abcool1);
 			}
 			
 			Player p=(Player)sender;
+			
 			p.openInventory(i);
 			
 		}
