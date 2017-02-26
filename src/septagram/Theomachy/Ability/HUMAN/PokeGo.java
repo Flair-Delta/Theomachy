@@ -42,7 +42,7 @@ public class PokeGo extends Ability{
 				int ar=r.nextInt(AbilityData.HUMAN_ABILITY_NUMBER);
 				AbilitySet.abiltiyAssignment(ar+101, playerName, event.getPlayer());
 				event.getPlayer().sendMessage(ChatColor.YELLOW+" ★ 경  "+ChatColor.WHITE+"만 보 걷기에 성공했습니다!  "+ChatColor.YELLOW+" 축 ★");
-				event.getPlayer().sendMessage(ChatColor.AQUA+ReturnAbilityName.name(ar)+ChatColor.WHITE+"!! 너로 정했다!!");
+				event.getPlayer().sendMessage(ChatColor.AQUA+ReturnAbilityName.name(ar+101)+ChatColor.WHITE+"!! 너로 정했다!!");
 				event.getPlayer().sendMessage("능력이 할당되었습니다. /t help로 능력을 확인해보세요.");
 			}
 			
