@@ -26,7 +26,7 @@ public class PokeGo extends Ability{
 	
 	public void T_Passive(PlayerMoveEvent event) {
 		
-		if(coolWalk==10) {
+		if(coolWalk==10000) {
 			
 			Random r=new Random();
 			
